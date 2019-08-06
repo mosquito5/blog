@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <div th:fragment="posts">
+        <div th:each="post : ${Pager.posts}">
+            <h1 th:text="${post.title}"></h1>
+        </div>
+        <a>posts</a>
+    </div>
+</body>
+</html>
