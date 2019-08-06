@@ -21,6 +21,7 @@ public class Post {
     private String Title;
 
     @NotBlank
+    @Column(columnDefinition = "TEXT")
     private String content;
 
     @NotBlank

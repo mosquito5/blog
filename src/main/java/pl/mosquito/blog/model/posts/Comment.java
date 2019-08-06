@@ -5,6 +5,7 @@ import lombok.Setter;
 import pl.mosquito.blog.model.users.User;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Getter @Setter
@@ -15,6 +16,8 @@ public class Comment {
     @Column(unique = true)
     private long id;
 
+    @NotBlank
+    @Column(columnDefinition = "TEXT")
     private String content;
 
     @ManyToOne
