@@ -18,7 +18,7 @@ public class Comment {
     private String content;
 
     @ManyToOne
-    @JoinTable(name = "user_id")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
@@ -29,6 +29,8 @@ public class Comment {
         this.user = user;
         this.post = post;
     }
+
+    public Comment(){}
 
     @Override
     public String toString() {

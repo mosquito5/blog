@@ -18,6 +18,9 @@ public class Post {
     private long id;
 
     @NotBlank
+    private String Title;
+
+    @NotBlank
     private String content;
 
     @NotBlank

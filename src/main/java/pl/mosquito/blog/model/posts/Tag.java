@@ -24,4 +24,6 @@ public class Tag {
     public Tag(String content) {
         this.content = content;
     }
+
+    public Tag(){}
 }
